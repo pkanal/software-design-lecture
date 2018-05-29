@@ -60,11 +60,6 @@ export const architectureSlides = (
     </Slide>
     <Slide>
       <Heading caps fit>
-        Horizontal scaling
-      </Heading>
-    </Slide>
-    <Slide>
-      <Heading caps fit>
         Vertical Scaling 💪🏽
       </Heading>
     </Slide>
@@ -115,7 +110,9 @@ export const architectureSlides = (
       <Text>Front-end optimization</Text>
     </Slide>
     <Slide>
-      <Heading>Environments</Heading>
+      <Heading caps fit>
+        Environments
+      </Heading>
     </Slide>
     <Slide>
       <Image src={images.environments} />

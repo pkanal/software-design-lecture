@@ -4,7 +4,8 @@ import { Deck } from "spectacle";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-import { introSlides, architectureSlides } from "../slides";
+import { introSlides } from "../slides/intro";
+import { architectureSlides } from "../slides/architecture";
 
 // Require CSS
 require("normalize.css");
