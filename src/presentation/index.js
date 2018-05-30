@@ -2,22 +2,25 @@ import React from "react";
 import { Deck } from "spectacle";
 import "tachyons";
 
+import CodeSlide from "spectacle-code-slide";
+
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
 import { introSlides } from "../slides/intro";
 import { architectureSlides } from "../slides/architecture";
 import { codePatternsSlides } from "../slides/code-patterns";
-import { underTheHoodSlides } from "../slides/under-the-hood";
+import { internalsSlides } from "../slides/internals";
+import { outroSlides } from "../slides/outro";
 
 // Require CSS
 require("normalize.css");
 
 const theme = createTheme(
   {
-    primary: "#ffffff",
-    secondary: "#D7A6A3",
-    tertiary: "#344472",
+    primary: "#D7A6A3",
+    secondary: "#344472",
+    tertiary: "#FFFFFF",
     quartenary: "#D83343",
     quint: "#798DBA"
   },
@@ -39,7 +42,8 @@ export default class Presentation extends React.Component {
         {introSlides}
         {architectureSlides}
         {codePatternsSlides}
-        {underTheHoodSlides}
+        {internalsSlides}
+        {outroSlides}
       </Deck>
     );
   }

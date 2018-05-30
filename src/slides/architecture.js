@@ -1,5 +1,5 @@
 import React from "react";
-import { SlideSet, Slide, Heading, Text, Image, Appear } from "spectacle";
+import { SlideSet, Slide, Heading, Text, Image, Appear, S } from "spectacle";
 
 const images = {
   minimumWebApp: require("../assets/minimum-web-app.svg"),
@@ -14,107 +14,116 @@ const images = {
 export const architectureSlides = (
   <SlideSet>
     <Slide>
-      <Heading caps fit>
-        Web App Architecture
+      <Heading fit textColor="tertiary">
+        🏛 🌐 Web App Architecture 🌐 🏛
       </Heading>
     </Slide>
     <Slide>
-      <Heading caps fit>
-        What do we care about
-      </Heading>
-      <Text size={3} textColor="secondary">
-        Working software
-      </Text>
-      <Text size={3} textColor="secondary">
-        User experience
-      </Text>
-      <Text size={3} textColor="secondary">
-        Developer experience
-      </Text>
-    </Slide>
-    <Slide>
-      <Heading caps fit>
+      <Heading fit textColor="secondary">
         Working software
       </Heading>
     </Slide>
-    <Slide>
+    <Slide bgColor="tertiary">
       <Image src={images.minimumWebApp} />
     </Slide>
     <Slide>
-      <Heading caps fit>
+      <Heading fit textColor="secondary">
         How will this scale?
       </Heading>
     </Slide>
     <Slide>
-      <Heading caps fit>
+      <Heading fit textColor="secondary">
         Performance & Scalability
       </Heading>
-      <Text size={3} textColor="secondary">
-        If you have a *performance* problem, your system is slow for a single
-        user
-      </Text>
-      <Text size={3} textColor="secondary">
-        If you have a scalability problem, your system is fast for a single user
-        but slow under heavy load
-      </Text>
+      <Appear>
+        <Text textAlign="left" padding="10" textColor="tertiary">
+          If you have a <S type="bold">performance</S> problem, your system is
+          slow for a single user
+        </Text>
+      </Appear>
+      <Appear>
+        <Text textAlign="left" padding="10" textColor="tertiary">
+          If you have a <S type="bold">scalability</S> problem, your system is
+          fast for a single user but slow under heavy load
+        </Text>
+      </Appear>
     </Slide>
     <Slide>
-      <Heading caps fit>
-        Vertical Scaling 💪🏽
+      <Heading fit textColor="secondary">
+        Vertical Scaling 🏋🏽
       </Heading>
     </Slide>
-    <Slide>
-      <Heading>💪🏽💪🏽💪🏽</Heading>
+    <Slide bgColor="tertiary">
+      <Heading>🏋🏽</Heading>
       <Image src={images.verticalScaling} />
     </Slide>
-    <Slide>
+    <Slide bgColor="tertiary">
       <Image src={images.webAppIssues} />
     </Slide>
     <Slide>
-      <Heading caps fit>
-        Horizontal scaling
+      <Heading fit textColor="secondary">
+        Horizontal scaling 💪🏽💪🏽💪🏽
       </Heading>
     </Slide>
-    <Slide>
+    <Slide bgColor="tertiary">
       <Image src={images.horizontalScaling} />
     </Slide>
     <Slide>
-      <Heading caps fit>
+      <Heading fit textColor="secondary">
         Stateless Applications
       </Heading>
     </Slide>
     <Slide>
-      <Text>
+      <Text textAlign="left" padding="10" textColor="tertiary">
         Server does not store data or read data about a user's session on the
         machine it's running on
       </Text>
     </Slide>
-    <Slide>
+    <Slide bgColor="tertiary">
       <Image src={images.webAppScale} />
     </Slide>
     <Slide>
-      <Heading caps fit>
+      <Heading fit textColor="secondary">
         Latency
       </Heading>
     </Slide>
     <Slide>
-      <Text>
+      <Text textAlign="left" padding="10" textColor="tertiary">
         Amount of time it takes for the host server to receive and process a
         request
       </Text>
-      <Text>Depends largely on where the user is from the server</Text>
+      <Appear>
+        <Text textAlign="left" padding="10" textColor="tertiary">
+          Depends largely on where the user is from the server
+        </Text>
+      </Appear>
     </Slide>
     <Slide>
-      <Text>Browsers make multiple network requests at once</Text>
-      <Text>Content delivery networks</Text>
-      <Text>Front-end optimization</Text>
+      <Heading fit textColor="secondary">
+        Minimizing Latency
+      </Heading>
+      <Appear>
+        <Text textAlign="left" padding="10" textColor="tertiary">
+          Browsers make multiple network requests at once
+        </Text>
+      </Appear>
+      <Appear>
+        <Text textAlign="left" padding="10" textColor="tertiary">
+          Content delivery networks
+        </Text>
+      </Appear>
+      <Appear>
+        <Text textAlign="left" padding="10" textColor="tertiary">
+          Front-end optimization
+        </Text>
+      </Appear>
     </Slide>
     <Slide>
-      <Heading caps fit>
+      <Heading fit textColor="secondary">
         Environments
       </Heading>
     </Slide>
-    <Slide>
+    <Slide bgColor="tertiary">
       <Image src={images.environments} />
     </Slide>
   </SlideSet>

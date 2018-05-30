@@ -1,4 +1,4 @@
-const multiplyByTwo = number => number * 2;
-const addFour = number => number + 4;
+const multiplyByTwo = n => n * 2;
+const addFour = n => n + 4;
 
 addFour(multiplyByTwo(4))
