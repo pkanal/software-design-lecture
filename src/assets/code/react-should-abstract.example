@@ -1,0 +1,25 @@
+<div>
+  <h1>Cart</h1>
+  <ul>
+    {products.map(product => (
+      <li>
+        {product.name}: ${product.price}
+      </li>
+    ))}
+  </ul>
+  <h2>Total + Tax: ${totalPlusTax()}</h2>
+</div>
+
+const Price = ({ children, currency = "$" }) => (<React.Fragment>{currency}{children}</React.Fragment>)
+
+<div>
+  <h1>Cart</h1>
+  <ul>
+    {products.map(product => (
+      <li>
+        {product.name}: <Price>{product.price}</Price>
+      </li>
+    ))}
+  </ul>
+  <h2>Total + Tax: <Price>{totalPlusTax()}</Price></h2>
+</div>

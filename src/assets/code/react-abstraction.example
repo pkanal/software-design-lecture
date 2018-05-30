@@ -1,0 +1,10 @@
+<div>
+  <h1>Cart</h1>
+  <ul>
+    {products.map(product => (
+      <li style={{ listStyle: "none" }}>
+        {product.name}: ${product.price}
+      </li>
+    ))}
+  </ul>
+</div>

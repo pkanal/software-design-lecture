@@ -1,11 +1,14 @@
 import React from "react";
 import { Deck } from "spectacle";
+import "tachyons";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
 import { introSlides } from "../slides/intro";
 import { architectureSlides } from "../slides/architecture";
+import { codePatternsSlides } from "../slides/code-patterns";
+import { underTheHoodSlides } from "../slides/under-the-hood";
 
 // Require CSS
 require("normalize.css");
@@ -35,6 +38,8 @@ export default class Presentation extends React.Component {
       >
         {introSlides}
         {architectureSlides}
+        {codePatternsSlides}
+        {underTheHoodSlides}
       </Deck>
     );
   }

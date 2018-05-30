@@ -1,0 +1,5 @@
+let divHeight = div.clientHeight / 2
+div.style.height = divHeight + 'px'
+
+let divWidth = div.clientWidth / 2
+div.style.width = divWidth + 'px'

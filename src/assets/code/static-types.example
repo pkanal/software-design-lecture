@@ -1,0 +1,6 @@
+const getX = obj => obj.x;
+
+getX({ x: 1, y: 2, a: undefined, b: undefined, c: undefined });
+getX({ x:1, a: 3, b: undefined, c: undefined, y: undefined });
+getX({ x:1, b: 3, a: undefined, c: undefined, y: undefined });
+getX({ x:1, c: 3, a: undefined, b: undefined, y: undefined });
