@@ -18,8 +18,8 @@ require("normalize.css");
 
 const theme = createTheme(
   {
-    primary: "#D7A6A3",
-    secondary: "#344472",
+    primary: "#FFB3A7",
+    secondary: "#1F4788",
     tertiary: "#FFFFFF",
     quartenary: "#D83343",
     quint: "#798DBA"

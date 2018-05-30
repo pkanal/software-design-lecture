@@ -18,11 +18,6 @@ export const architectureSlides = (
         🏛 🌐 Web App Architecture 🌐 🏛
       </Heading>
     </Slide>
-    <Slide>
-      <Heading fit textColor="secondary">
-        Working software
-      </Heading>
-    </Slide>
     <Slide bgColor="tertiary">
       <Image src={images.minimumWebApp} />
     </Slide>
